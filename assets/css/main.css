@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -87,7 +88,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #2e3842;
+		background: #101821;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3546,7 +3547,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 30px) {
 
 			#banner {
 				padding: 7em 3em 5em 3em ;
@@ -3866,10 +3867,22 @@ input, select, textarea {
 	  }
 	  
 	  .skill img {
-		max-width: 200px; 
-		height: 200px;  
+		max-width: 150px; 
+		height: 150px;  
 		display: block; /* Makes image a block element for centering */
 		margin: 0 auto 5px; /* Centers image, adds space above text */
+		
 	  } 
 	  
+	  @media only screen and (max-width: 768px) { 
+		.skill img {
+		  transform: scale(0.8);  /* Scale down the image by 80% */
+		}
+	  }
+	  
+	  @media only screen and (max-width: 480px) { 
+		.skill img {
+		  transform: scale(0.7);  /* Scale further for smaller screens */
+		}
+	  }
 	  
